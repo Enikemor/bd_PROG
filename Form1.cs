@@ -534,6 +534,7 @@ namespace bd_PROG
         {
             button6.Enabled = false;
             button6.Visible = false;
+            g.pl.has_key = false;
             foreach (item i in g.pl.stuffs) 
             {
                 g.pl.money += i.costs;

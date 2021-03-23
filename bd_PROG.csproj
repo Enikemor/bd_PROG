@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\game.cs" />
+    <Compile Include="death.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="death.Designer.cs">
+      <DependentUpon>death.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

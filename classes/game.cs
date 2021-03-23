@@ -23,12 +23,12 @@ namespace bd_PROG.classes
             lvl_stuff.Add(new item() { costs = 0, hp_restore = -20, is_key = false });
             lvl_stuff.Add(new item() { costs = 0, hp_restore = 203, is_key = false });
             monsters = new List<abomination>();
-            monsters.Add(new abomination() {hp=100, lvl=3});
-            monsters.Add(new abomination() { hp=150,lvl=1});
-            monsters.Add(new abomination() { hp=90,lvl=1 });
-            monsters.Add(new abomination() { hp=67,lvl=1 });
-            monsters.Add(new abomination() { hp=44,lvl=1 });
-            monsters.Add(new abomination() { hp=30,lvl=1 });
+            monsters.Add(new abomination() {hp=100, lvl=32,key_word="money1"});
+            monsters.Add(new abomination() { hp=150,lvl=10, key_word = "helth1" });
+            monsters.Add(new abomination() { hp=90,lvl=12 , key_word = "money2" });
+            monsters.Add(new abomination() { hp=67,lvl=12 ,key_word = "none" });
+            monsters.Add(new abomination() { hp=44,lvl=1 , key_word = "none" });
+            monsters.Add(new abomination() { hp=30,lvl=1 , key_word = "none" });
         }
 
 
@@ -327,5 +327,6 @@ namespace bd_PROG.classes
         public item loot;
         public int hp;
         public int lvl;
+        public string key_word;
     }
 }
